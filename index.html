@@ -176,7 +176,7 @@
       To get a further analysis of regression testing on our data set, we added a Decision Tree Regression to attempt to let the model learn to make decisions based on the data we provided.
     </p>
     <div class="c">
-      <img src="/imgs/FeatureDesc.JPG" alt="Features" style="width:500px;height:500px;">
+      <img src="/imgs/FeatureDesc.JPG" alt="Features" style="width:500px;height:250px;">
     <p class="m">
       The data features we tested our baseline model on have importance values associated with the Multivariate Linear Regression. Each of the trained and tested features are represented
       with their respective importance values based on their attribution to our initial regression model approach. Some variables were weighted much more than others such as slugging percentage (SLG)
@@ -187,6 +187,9 @@
   
   <div id="projtra" class="tabcontent">
   <h2>Project Trajectory</h2>
+    <div class="c">
+      <img src="/imgs/DataTable.JPG" alt="Features" style="width:400px;height:110px;">
+    </div>
     <p class="m">
       We started with our Multivariate Linear Regression model. This gave us a few metrics to base the accuracy of this model on such as the R2 value. The R2 value is a statistical measure
       of how close our data are to the modeled regression line. With a high R2 value of 0.929429, the linear regression seemed to be a decent first fit for our data.
@@ -195,20 +198,12 @@
       we can see our estimation is virtually unbiased. 
     </p>
     <div class="c">
-      <img src="/imgs/DataTable.JPG" alt="Features" style="width:400px;height:110px;">
+      <img src="/imgs/DataGraph.JPG" alt="Features" style="width:500px;height:315px;">
     </div>
     <p class="m">
       When we tested our data with different regression approaches, the Bayesian-Ridge model actually outperformed the Linear Regression model slightly. We tested the same model using a Lasso Regression decreased our model's
       accuracy. The expected value of the Lasso Regression model varied slightly more from the R2 value which indicates a slight bias. The Decision Tree model provided the worst test accuracy which indicates that this regression
       model doesn't fit our data best. Overall, the Bayesion-Ridge model's accuracy and bias seems to be the best fit with the Linear Regression model in a close second.
-    </p>
-    <div class="c">
-      <img src="/imgs/DataGraph.JPG" alt="Features" style="width:500px;height:315px;">
-    </div
-    <p class="m">
-      We believe that our model predicts with relative accuracy and gives a decent estimation for the number of home runs to be hit during the next season played. As the results show, we have negative
-      values due to our regression models. As negative values cannot be possible in the game of baseball, we attribute our predictions to higher negatively weighted stats than positive weighted stats
-      among the players with negative predicted home runs.
     </p>
   </div>
   
@@ -216,6 +211,11 @@
   <div id="results" class="tabcontent">
     <h2>Results, and Interpretation</h2>
     <div class= "test">
+      <p class="m">
+      We believe that our model predicts with relative accuracy and gives a decent estimation for the number of home runs to be hit during the next season played. As the results show, we have negative
+      values due to our regression models. As negative values cannot be possible in the game of baseball, we attribute our predictions to higher negatively weighted stats than positive weighted stats
+      among the players with negative predicted home runs.
+      </p>
     </div>
   </div>
   
