@@ -68,6 +68,7 @@
     <button class="tablinks" onclick="openCity(event,'litrev')">Literature Review</button>
     <button class="tablinks" onclick="openCity(event,'modapp')">Modeling Approach</button>
     <button class="tablinks" onclick="openCity(event,'projtra')">Project Trajectory</button>
+    <button class="tablinks" onclick="openCity(event,'results')">Results</button>
     <button class="tablinks" onclick="openCity(event,'conclusion')">Conclusion</button>
     <button class="tablinks" onclick="openCity(event,'reference')">References</button>
   </div>
@@ -175,7 +176,7 @@
       To get a further analysis of regression testing on our data set, we added a Decision Tree Regression to attempt to let the model learn to make decisions based on the data we provided.
     </p>
     <div class="c">
-      <img src="/imgs/FeatureDesc.JPG" alt="Features" style="width:400px;height:225px;">
+      <img src="/imgs/FeatureDesc.JPG" alt="Features" style="width:500px;height:500px;">
     <p class="m">
       The data features we tested our baseline model on have importance values associated with the Multivariate Linear Regression. Each of the trained and tested features are represented
       with their respective importance values based on their attribution to our initial regression model approach. Some variables were weighted much more than others such as slugging percentage (SLG)
@@ -185,7 +186,7 @@
   </div>
   
   <div id="projtra" class="tabcontent">
-  <h2>Project Trajectory, Results, and Interpretation</h2>
+  <h2>Project Trajectory</h2>
     <p class="m">
       We started with our Multivariate Linear Regression model. This gave us a few metrics to base the accuracy of this model on such as the R2 value. The R2 value is a statistical measure
       of how close our data are to the modeled regression line. With a high R2 value of 0.929429, the linear regression seemed to be a decent first fit for our data.
@@ -209,6 +210,13 @@
       values due to our regression models. As negative values cannot be possible in the game of baseball, we attribute our predictions to higher negatively weighted stats than positive weighted stats
       among the players with negative predicted home runs.
     </p>
+  </div>
+  
+  
+  <div id="results" class="tabcontent">
+    <h2>Results, and Interpretation</h2>
+    <div class= "test">
+    </div>
   </div>
   
   <div id="conclusion" class="tabcontent">  
