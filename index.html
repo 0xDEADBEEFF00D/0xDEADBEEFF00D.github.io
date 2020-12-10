@@ -211,10 +211,20 @@
   <div id="results" class="tabcontent">
     <h2>Results, and Interpretation</h2>
     <div class= "test">
+      <div class="c">
+        <img src="/imgs/HRPlayers.JPG" alt="Features" style="width:250px;height:150px;">
+      </div>
       <p class="m">
       We believe that our model predicts with relative accuracy and gives a decent estimation for the number of home runs to be hit during the next season played. As the results show, we have negative
       values due to our regression models. As negative values cannot be possible in the game of baseball, we attribute our predictions to higher negatively weighted stats than positive weighted stats
       among the players with negative predicted home runs.
+      </p>
+      <div class="c">
+        <img src="/imgs/TopHRPlayers.JPG" alt="Features" style="width:250px;height:175px;">
+      </div>
+      <p class="m">
+       Our baseline model prediction for the Top HR Players using the Multivariate Linear Regression is feasible. We might have had slightly more accurate predictions with the Bayesian-Ridge
+       model, however, these are promising results for our initial model. Those who watch the MLB closely knows that our top players are great predictions for the leading HR slots for next season.
       </p>
     </div>
   </div>
@@ -222,22 +232,12 @@
   <div id="conclusion" class="tabcontent">  
     <h2>Conclusion and Future Work</h2>
     <div class= "test">
-    <div class="c">
-      <img src="/imgs/HRPlayers.JPG" alt="Features" style="width:400px;height:300px;">
-    </div>
     <p class="m">
       We acknowledge that our results are rudimentary and our models can use a bit of polishing. However, our models seem to result in logical outputs for the task we set out for.
       The past home run leaders are more often predicted in the higher ranks among estimated home run leaders. We can interpret negative results like we did in the previous section
       such that negative values for players can be attributed to the fact that they have a much less likely chance to output large numbers of home runs. The highest player predicted values
       are extremely reasonable and can be generally expected for the next season. Given more time, if we scaled our data to meet season averages or if we gave net 0 weights to negative stats
       instead of negative weights and kept our positive weights similar, we would most likely come up with more accurate numbers as well as bar the negative predicted values.
-    </p>
-    <div class="c">
-      <img src="/imgs/TopHRPlayers.JPG" alt="Features" style="width:400px;height:300px;">
-    </div>
-    <p class="m">
-      Our baseline model prediction for the Top HR Players using the Multivariate Linear Regression is feasible. We might have had slightly more accurate predictions with the Bayesian-Ridge
-      model, however, these are promising results for our initial model. Those who watch the MLB closely knows that our top players are great predictions for the leading HR slots for next season.
     </p>
     </div>
   </div>
