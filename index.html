@@ -82,12 +82,12 @@
   <p class="m">This project aims to predict the Home Run Leader for the MLB in the next year
     according to previous years’ player statistics to have a better idea of which player will lead the league.
     Growing up playing baseball and watching the MLB has interested us since we were kids
-    and wish to develop a closer understanding of player growth and predictions.
-    Being able to apply our field of study to our hobby in order to gain a further understanding
-    of the game we enjoy is a strong driving factor.
+    and we wished to develop a closer understanding of player growth and predictions.
+    Being able to apply our field of study to our hobby of interest in order to gain a further understanding
+    of the game we enjoy wass a strong driving factor for this project.
     We have strived to find a predictive model(s) to accurately model our end goal.
-    These predictive models could potentially net us money based on selling this predictive solution
-    to professional sports networks or betting companies.</p>
+    These predictive models could potentially net us money based on selling the solution
+    to professional sports networks, betting companies, or to be used in user applications.</p>
       <img src="/imgs/MLBlogo.jpg" alt="MLB" style="width:600px;height:400px;">
       </div>
   </div>
@@ -98,10 +98,10 @@
     <div class = "test">
       <p class="m">
         Every year the Home Run Leader title is a hotly contested title as many of the best players in the league attempt to take the crown. 
-        Along with this a lot of people tend to bet on this statistic and predict who at the end of the season will have the most home runs. 
+        Along with this, a lot of people tend to bet on this statistic and predict who at the end of the season will have the most home runs. 
         This problem is somewhat challenging as baseball is often very unpredictable and almost anyone having a hot season can take the title. 
-        Given this unpredictability it becomes hard to bet on a player and win. Showing recent trends among the previous home run leaders
-        and other relevant stats will graphically display how the predictive model comes up with the player who is most likely to win.
+        Given this unpredictability, it is unlikely to bet on a player and win. Showing recent trends among the previous home run leaders
+        and other relevant stats will graphically display how a predictive model can result in the player who is most likely to win.
       </p>
       <p class="m">
         Predictive models may be able to path an accurate set of players that put up big numbers in the coming seasons. 
@@ -110,15 +110,15 @@
         and potentially create a trend to home run leaders in future seasons. There are a few player statistics that we feel are pertinent to our model
         such as total games played (G), at-bats (AB), home runs (HR), strike-outs (SO),
         walks (base on balls or BB), batting average (BA), and slugging percentage (SLG). We feel these statistics are important to the
-        player being evaluated when considering their performance at the plate. The factors stated are being tracked due to these reasons:
+        evaluated player when considering their home run hitting potential. The factors stated are being tracked due to these reasons:
       </p>
       <ul>
-        <li>Total Games (G): The total number of games a player plays in over the course of a season is pertinent to understanding a high-level aspect
+        <li>Total Games (G): The total number of games a player plays in over the course of a season is essential to understanding a high-level aspect
           of the relative time they have a chance to hit home runs over the course of a 162 game regular season (not including post-season games).
         </li>
         <li>At Bats (AB): At Bats are the total number of times a player has hit the ball into play (including a home run)
-          and the number of times that player has gotten out. This can be considered an alternate approach to Plate Appearances
-          if we need to dismiss walks (BB), hit-by-pitches (HBP), sacrifice fly outs (SF), and sacrifice hits (SH).
+          and the number of times that player has gotten out. This is the alternate approach to Plate Appearances (PA)
+          as we need to dismiss walks (BB), hit-by-pitches (HBP), sacrifice fly outs (SF), and sacrifice hits (SH).
         </li>
         <li>Home Runs (HR): This statistic simply speaks for itself when considering a model for the player who will have the most home runs in the coming season. 
           Using previous years statistics, we can look at which players may be on the rise or fall of their professional careers in the home run category.
@@ -128,13 +128,14 @@
           Both circumstances add a negative weight to determining who has the highest potential in hitting the ball, let alone hitting home runs.
         </li>
         <li>Walks (Base on Balls or BB): We want to track this statistic as we feel walking is indicative to being selective when hitting and being able to wait
-          until the hitter gets a pitch they want to swing at. Being selective at the plate allows for the hitter to see more pitches and hone in on a good pitch to hit.
+          until the hitter gets a pitch they want to swing at. Being selective at the plate allows for the hitter to see more pitches and hone in on a good pitch to hit, potentially
+          resulting in a home run.
         </li>
-        <li>Batting Average (BA): Batting Average is the amount of hits a hitter gets in their total amount of at-bats. We will only use this as a comparison to a player’s
+        <li>Batting Average (BA): Batting Average is the amount of hits a hitter gets in their total amount of at-bats. We will use this as a comparison to a player’s
           Slugging Percentage which we feel is more indicative of a player’s ability to hit home runs.
         </li>
         <li>Slugging Percentage (SLG): Slugging Percentage is an interesting statistic that we feel can bring a lot of power (pun intended) to the accuracy of our predictive model. 
-          Slugging Percentage is a better representation of batter productivity than batting average to our model since we are interested in home runs.
+          Slugging Percentage is a better representation of batter productivity than batting average as we are interested in tracking and predicting home runs.
           Slugging Percentage is a scale of 0-4 that represents a hitter’s ability to get on base. If a hitter gets a single and reaches first base in 1 at-bat, they have a Slugging Percentage of 1.000.
           If a hitter gets a double/triple/home run and reaches each respective base in only 1 at-bat, they have a Slugging Percentage of 2.000/3.000/4.000.
           This statistic grants a higher weight to the more bases a player reaches due to their performance at the plate. The higher a player’s Slugging Percentage is,
@@ -154,11 +155,12 @@
         <li><a href="http://www.baseballdatascience.com/analyzing-the-mlbs-home-run-boom/">Analyze MLB Home Run Boom</a>
         </li>
       </ul>
-      For the most part, predicting the home run leader for each MLB season has been untouched. This provides a relatively new and unexplored field for machine learning
+      For the most part, the topic of predicting the home run leader for each MLB season has been untouched. This provides a relatively new and unexplored field for machine learning
       to present hidden trends and data that were previously unknown. Since the 2002 Oakland Athletics, statistics and sabermetrics have been a booming area of research in all of baseball.
       Machine learning will likely begin to utilize these new tracked pieces of data to predict games of baseball at a more accurate rate. 
       There have been studies recently showing the explosion of the number of home runs hit each season since 2016. 
-      Those who follow the sport can only guess at where this spike in home runs came from; whether the ball is 'juiced' in the hitter's favor or whether the hitters themselves are 'juicing'.  
+      Those who follow the sport can only guess at where this spike in home runs came from; whether the ball is "juiced" in the hitter's favor (has more elasticity, therefore has a higher exit velocity
+      coming off of a player's bat) or whether the hitters themselves are "juicing" (taking performance-enhacing drugs).  
       Whatever the explanation may be, there comes a question as to who the eventual season leader in the home run category will be.
     </p>
   </div>
@@ -166,21 +168,21 @@
   <div id="modapp" class="tabcontent">
   <h2>Modeling Approach</h2>
     <p class="m">
-      The baseline model used to initially train from a set of data used a Multivariate Linear Regression model. The data that was analyzed included total games(G), at bats (AB), hits (H), home runs (HR),
+      The baseline model we chose to initially train from our set of data implemented a Multivariate Linear Regression model. The data that was analyzed included total games(G), at bats (AB), hits (H), home runs (HR),
       base on balls (BB), strikeouts (SO), batting average (BA), on base percentage (OBP), and slugging percentage (SLG) for each player.  We gave the years’ 2010-2018 data to our training set. 
       Then, we gave the years’ 2018-2019 data to be our test set. After that, we ran the prediction regression for the previous season of 2020 to find the general accuracy of the model predictions.
       We expected a skew in the numbers recorded for the 2020 season as there were fewer total games played due to the COVID-19 virus and the season was shortened to a 60 game season compared to a normal 162 game season. 
-      This allowed us to predict home run numbers if 2020 had been a full season. We expanded on the baseline model by analyzing other regressions. This granted an expected higher understanding compared to our baseline model only
-      using Multivariate Linear Regression. We wanted to run separate regression models on our data to see which regression fit our data best. The Bayesian-Ridge model was used to measure the accuracy of our system as we wanted to test for
-      multicollinearity to account for our data attributes being highly correlated. We also wanted to try a Lasso Regression model to examine if it would reduce variability and improve the accuracy of our home run predictions. 
-      To get a further analysis of regression testing on our data set, we added a Decision Tree Regression to attempt to let the model learn to make decisions based on the data we provided.
+      This allowed us to predict home run numbers if 2020 had been a full season. The data features we tested our baseline model on have importance values associated with the Multivariate Linear Regression. Each of the trained and tested features are represented
+      with their respective importance values based on their attribution to our initial regression model approach. Some variables were weighted much more than others such as slugging percentage (SLG)
+      to on-base percentage (OBP).
     </p>
     <div class="c">
       <img src="/imgs/FeatureDesc.JPG" alt="Features" style="width:550px;height:350px;">
     <p class="m">
-      The data features we tested our baseline model on have importance values associated with the Multivariate Linear Regression. Each of the trained and tested features are represented
-      with their respective importance values based on their attribution to our initial regression model approach. Some variables were weighted much more than others such as slugging percentage (SLG)
-      to on-base percentage (OBP).
+      We expanded on the baseline model by analyzing other regressions. This granted a higher understanding of our data compared to using only our baseline model 
+      that implemented Multivariate Linear Regression. We wanted to run separate regression models on our data to see which regression fit our data best. The Bayesian-Ridge model was used to measure the accuracy of our system as we wanted to test for
+      multicollinearity to account for our data attributes being highly correlated. We also wanted to try a Lasso Regression model to examine if it would reduce variability and improve the accuracy of our home run predictions. 
+      To get a further analysis of regression testing on our data set, we added a Decision Tree Regression to attempt to let the model learn to make decisions based on the data we provided.
     </p>
     </div>
   </div>
@@ -193,16 +195,16 @@
     <p class="m">
       We started with our Multivariate Linear Regression model. This gave us a few metrics to base the accuracy of this model on such as the R2 value. The R2 value is a statistical measure
       of how close our data are to the modeled regression line. With a high R2 value of 0.929429, the linear regression seemed to be a decent first fit for our data.
-      We were skeptical that our data still needed to further assurance when using the Linear Regression model so we decided to factor in the Expected Variance Score which accounts for the tendency of
-      underestimation/overestimation, or explaining bias. As our Expected Variance Score of 0.929580 is almost identical to the Linear Regression model's R2 value,
+      We were skeptical that our data still needed to further assurance when using the Linear Regression model so we decided to factor in the Explained Variance Score which accounts for the tendency of
+      underestimation/overestimation, or explaining bias. As our Explained Variance Score of 0.929580 is almost identical to the Linear Regression model's R2 value,
       we can see our estimation is virtually unbiased. 
     </p>
     <div class="c">
       <img src="/imgs/DataGraph.JPG" alt="DataGraph" style="width:500px;height:315px;">
     </div>
     <p class="m">
-      When we tested our data with different regression approaches, the Bayesian-Ridge model actually outperformed the Linear Regression model slightly. We tested the same model using a Lasso Regression decreased our model's
-      accuracy. The expected value of the Lasso Regression model varied slightly more from the R2 value which indicates a slight bias. The Decision Tree model provided the worst test accuracy which indicates that this regression
+      When we tested our data with different regression approaches, the Bayesian-Ridge model outperformed the Linear Regression model slightly. We tested the same model using a Lasso Regression which decreased our model's
+      accuracy. The Explained Variance Score of the Lasso Regression model varied slightly more from the R2 value which indicates a slight bias. The Decision Tree model provided the worst test accuracy which indicates that this regression
       model doesn't fit our data best. Overall, the Bayesion-Ridge model's accuracy and bias seems to be the best fit with the Linear Regression model in a close second.
     </p>
   </div>
@@ -215,7 +217,7 @@
         <img src="/imgs/HRPlayers.JPG" alt="HRPlayers" style="width:250px;height:190px;">
       </div>
       <p class="m">
-      We believe that our model predicts with relative accuracy and gives a decent estimation for the number of home runs to be hit during the next season played. As the results show, we have negative
+      We believe that our model predicts with relative accuracy and gives a decent estimation for the number of home runs to be hit during the next season played. As the results show, some players have negative
       values due to our regression models. As negative values cannot be possible in the game of baseball, we attribute our predictions to higher negatively weighted stats than positive weighted stats
       among the players with negative predicted home runs.
       </p>
@@ -224,7 +226,7 @@
       </div>
       <p class="m">
        Our baseline model prediction for the Top HR Players using the Multivariate Linear Regression is feasible. We might have had slightly more accurate predictions with the Bayesian-Ridge
-       model, however, these are promising results for our initial model. Those who watch the MLB closely knows that our top players are great predictions for the leading HR slots for next season.
+       model, however, these are promising results for our initial model. Those who watch the MLB closely knows that our top player set is a reasonable prediction for the leading HR slots next season.
       </p>
     </div>
   </div>
@@ -233,11 +235,12 @@
     <h2>Conclusion and Future Work</h2>
     <div class= "test">
     <p class="m">
-      We acknowledge that our results are rudimentary and our models can use a bit of polishing. However, our models seem to result in logical outputs for the task we set out for.
-      The past home run leaders are more often predicted in the higher ranks among estimated home run leaders. We can interpret negative results like we did in the previous section
+      As the past home run leaders are more often predicted in the higher ranks among estimated home run leaders, we can interpret negative results like we did in the previous section
       such that negative values for players can be attributed to the fact that they have a much less likely chance to output large numbers of home runs. The highest player predicted values
       are extremely reasonable and can be generally expected for the next season. Given more time, if we scaled our data to meet season averages or if we gave net 0 weights to negative stats
-      instead of negative weights and kept our positive weights similar, we would most likely come up with more accurate numbers as well as bar the negative predicted values.
+      instead of negative weights and kept our positive weights similar, we would most likely come up with more accurate numbers as well as bar the negative predicted values. We could also
+      include a much larger training set if we decided to extract data from further than 10 years in the past. We acknowledge that our results are rudimentary and our models can use a bit of polishing. 
+      However, our initial models seem to result in logical outputs for the task we set out for.
     </p>
     </div>
   </div>
