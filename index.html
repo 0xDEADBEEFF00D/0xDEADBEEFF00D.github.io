@@ -1,141 +1,313 @@
 <!DOCTYPE html>
-<html lang="en">
-<title>W3.CSS Template</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<html>
+<head>
+  <title>CPSC 4030 Project</title>
 <style>
-html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
-.w3-sidebar {
-  z-index: 3;
-  width: 250px;
-  top: 43px;
-  bottom: 0;
-  height: inherit;
-}
-</style>
-<body>
-
-<!-- Navbar -->
-<div class="w3-top">
-  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
-    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
-    <a href="#" class="w3-bar-item w3-button w3-theme-l1">Logo</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Values</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">News</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Clients</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Partners</a>
-  </div>
-</div>
-
-<!-- Sidebar -->
-<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
-    <i class="fa fa-remove"></i>
-  </a>
-  <h4 class="w3-bar-item"><b>Menu</b></h4>
-  <a class="w3-bar-item w3-button w3-hover-black" href="#">Link</a>
-  <a class="w3-bar-item w3-button w3-hover-black" href="#">Link</a>
-  <a class="w3-bar-item w3-button w3-hover-black" href="#">Link</a>
-  <a class="w3-bar-item w3-button w3-hover-black" href="#">Link</a>
-</nav>
-
-<!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
-
-<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
-<div class="w3-main" style="margin-left:250px">
-
-  <div class="w3-row w3-padding-64">
-    <div class="w3-twothird w3-container">
-      <h1 class="w3-text-teal">Heading</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum
-        dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </div>
-    <div class="w3-third w3-container">
-      <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
-      <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
-    </div>
-  </div>
-
-  <div class="w3-row">
-    <div class="w3-twothird w3-container">
-      <h1 class="w3-text-teal">Heading</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum
-        dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </div>
-    <div class="w3-third w3-container">
-      <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
-      <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
-    </div>
-  </div>
-
-  <div class="w3-row w3-padding-64">
-    <div class="w3-twothird w3-container">
-      <h1 class="w3-text-teal">Heading</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum
-        dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </div>
-    <div class="w3-third w3-container">
-      <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
-      <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
-    </div>
-  </div>
-
-  <!-- Pagination -->
-  <div class="w3-center w3-padding-32">
-    <div class="w3-bar">
-      <a class="w3-button w3-black" href="#">1</a>
-      <a class="w3-button w3-hover-black" href="#">2</a>
-      <a class="w3-button w3-hover-black" href="#">3</a>
-      <a class="w3-button w3-hover-black" href="#">4</a>
-      <a class="w3-button w3-hover-black" href="#">5</a>
-      <a class="w3-button w3-hover-black" href="#">»</a>
-    </div>
-  </div>
-
-  <footer id="myFooter">
-    <div class="w3-container w3-theme-l2 w3-padding-32">
-      <h4>Footer</h4>
-    </div>
-
-    <div class="w3-container w3-theme-l1">
-      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-    </div>
-  </footer>
-
-<!-- END MAIN -->
-</div>
-
-<script>
-// Get the Sidebar
-var mySidebar = document.getElementById("mySidebar");
-
-// Get the DIV with overlay effect
-var overlayBg = document.getElementById("myOverlay");
-
-// Toggle between showing and hiding the sidebar, and add overlay effect
-function w3_open() {
-  if (mySidebar.style.display === 'block') {
-    mySidebar.style.display = 'none';
-    overlayBg.style.display = "none";
-  } else {
-    mySidebar.style.display = 'block';
-    overlayBg.style.display = "block";
+ h1 {text-align:center;
+     color:white;}
+ h2 {text-align:center;}
+ p.m {text-align:justify;
+      text-align:left;
+      display:block;}
+  div.c {text-align:center;}
+ div.WinRate {text-align:center;}
+ div.PickRate {text-align:center;}
+ div.TotalGames {text-align:center;}
+  div.maintext {
+    margin: auto;
+    width: 75%;
+    height: 750px;
+    border: 2px solid blue;
+    padding: 10px;
+    background-color: white;
   }
+  .tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+  }
+  .tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+   }
+  .tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  }
+  .tab button:hover {
+  background-color: #ddd;
+  }
+  .tab button.active {
+  background-color: #ccc;
+  }
+  .test {
+    position: relative;
+    display : inline-block;
+    vertical-align : middle;
 }
-
-// Close the sidebar with the close button
-function w3_close() {
-  mySidebar.style.display = "none";
-  overlayBg.style.display = "none";
+  .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
-</script>
+  
+</style>
+</head>
+<body style="background-color:#003153;">
+  <h1>Predicting the MLB Home Run Leader</h1>
+  <div class="maintext">
+    
+  <div class="tab">
+    <button class="tablinks" onclick="openCity(event,'problem')" id="defaultOpen">Problem Statement</button>
+    <button class="tablinks" onclick="openCity(event,'datadesc')">Data Description</button>
+    <button class="tablinks" onclick="openCity(event,'litrev')">Literature Review</button>
+    <button class="tablinks" onclick="openCity(event,'modapp')">Modeling Approach</button>
+    <button class="tablinks" onclick="openCity(event,'projtra')">Project Trajectory</button>
+    <button class="tablinks" onclick="openCity(event,'conclusion')">Conclusion</button>
+    <button class="tablinks" onclick="openCity(event,'reference')">References</button>
+  </div>
+  
+  <div id="problem" class="tabcontent">
+  <div>
+    <h2>Problem Statement and Motivation</h2>
+    <div class="c">
+      
+      
+  <p class="m">This project aims to predict the Home Run Leader for the MLB in the next year
+    according to previous years’ player statistics to have a better idea of which player will lead the league.
+    Growing up playing baseball and watching the MLB has interested us since we were kids
+    and wish to develop a closer understanding of player growth and predictions.
+    Being able to apply our field of study to our hobby in order to gain a further understanding
+    of the game we enjoy is a strong driving factor.
+    We have strived to find a predictive model(s) to accurately model our end goal.
+    These predictive models could potentially net us money based on selling this predictive solution
+    to professional sports networks or betting companies.</p>
+      <img src="/imgs/MLBlogo.png" alt="MLB" style="width:600px;height:400px;">
+      </div>
+  </div>
+  </div>
 
+  <div id="datadesc" class="tabcontent">
+  <h2>Introduction and Description of Data</h2>
+    <div class = "test">
+      <p class="m">
+        Every year the Home Run Leader title is a hotly contested title as many of the best players in the league attempt to take the crown. 
+        Along with this a lot of people tend to bet on this statistic and predict who at the end of the season will have the most home runs. 
+        This problem is somewhat challenging as baseball is often very unpredictable and almost anyone having a hot season can take the title. 
+        Given this unpredictability it becomes hard to bet on a player and win. Showing recent trends among the previous home run leaders
+        and other relevant stats will graphically display how the predictive model comes up with the player who is most likely to win.
+      </p>
+      <p class="m">
+        Predictive models may be able to path an accurate set of players that put up big numbers in the coming seasons. 
+        Baseball Reference has data dating back to 1871 regarding the home run leader using the most accurate and up-to-date statistics. 
+        This gives a large statistical foundation to being able to come up with a model that can pull other stats from the past home run leaders
+        and potentially create a trend to home run leaders in future seasons. There are a few player statistics that we feel are pertinent to our model
+        such as league (LG), player age (Age), total games played (G), plate appearances (PA), at-bats (AB), home runs (HR), strike-outs (SO),
+        walks (base on balls or BB), batting average (BA), and slugging percentage (SLG). We feel these statistics are important to the
+        player being evaluated when considering their performance at the plate. The factors stated are being tracked due to these reasons:
+      </p>
+      <ul>
+        <li>League (LG): There are discrepancies between the National League and American League when talking about home runs. 
+          It appears that the American League, traditionally, outperforms the National League hitters when it comes to hitting home runs
+          (barring the years when the American League didn’t exist such as 1871-1881 and 1893-1900). This could be due to a number of factors
+          such as better recruiting and scouting done by the American League or due to the way the differing and larger dimensions of
+          National League ballparks deny players a home run ball compared to an American League park.
+        </li>
+        <li>Player Age (Age): As with any player in any sport, performances can raise and decline as a player starts to add on years. 
+          When starting in the major leagues, a player could have worse stats than 5 years down the line when they have more experience under their belts. 
+          The same player could have worsening stats 10 years down the line due to physical limitations and body aging preventing the same performance at their body’s “natural peak”.
+        </li>
+        <li>Total Games (G): The total number of games a player plays in over the course of a season is pertinent to understanding a high-level aspect
+          of the relative time they have a chance to hit home runs over the course of a 162 game regular season (not including post-season games).
+        </li>
+        <li>Plate Appearances (PA): Plate appearances numbers the total times a player steps up to the plate.
+          This statistic describes the number of chances each player has to hit a home run by stepping into the batter’s box.
+        </li>
+        <li>At Bats (AB): At Bats are the total number of times a player has hit the ball into play (including a home run)
+          and the number of times that player has gotten out. This can be considered an alternate approach to Plate Appearances
+          if we need to dismiss walks (BB), hit-by-pitches (HBP), sacrifice fly outs (SF), and sacrifice hits (SH).
+        </li>
+        <li>Home Runs (HR): This statistic simply speaks for itself when considering a model for the player who will have the most home runs in the coming season. 
+          Using previous years statistics, we can look at which players may be on the rise or fall of their professional careers in the home run category.
+        </li>
+        <li>Strikeouts (SO): We want to track this statistic as we feel striking out is a negative impact on a hitter’s ability to hit home runs. 
+          Striking out determines that a player is swinging at a ball and not hitting it or looking a ball go by them inside the strike zone when they have 2 strikes to begin with. 
+          Both circumstances add a negative weight to determining who has the highest potential in hitting the ball, let alone hitting home runs.
+        </li>
+        <li>Walks (Base on Balls or BB): We want to track this statistic as we feel walking is indicative to being selective when hitting and being able to wait
+          until the hitter gets a pitch they want to swing at. Being selective at the plate allows for the hitter to see more pitches and hone in on a good pitch to hit.
+        </li>
+        <li>Batting Average (BA): Batting Average is the amount of hits a hitter gets in their total amount of at-bats. We will only use this as a comparison to a player’s
+          Slugging Percentage which we feel is more indicative of a player’s ability to hit home runs.
+        </li>
+        <li>Slugging Percentage (SLG): Slugging Percentage is an interesting statistic that we feel can bring a lot of power (pun intended) to the accuracy of our predictive model. 
+          Slugging Percentage is a better representation of batter productivity than batting average to our model since we are interested in home runs.
+          Slugging Percentage is a scale of 0-4 that represents a hitter’s ability to get on base. If a hitter gets a single and reaches first base in 1 at-bat, they have a Slugging Percentage of 1.000.
+          If a hitter gets a double/triple/home run and reaches each respective base in only 1 at-bat, they have a Slugging Percentage of 2.000/3.000/4.000.
+          This statistic grants a higher weight to the more bases a player reaches due to their performance at the plate. The higher a player’s Slugging Percentage is,
+          the more “power” they have at hitting the ball further and potentially hitting more home runs (this is overly simplified; however, we feel a great basis of understanding
+          as to why this statistic is important to our model).
+        </li>
+      </ul> 
+    </div>
+  </div> 
+    
+  <div id="litrev" class="tabcontent">
+  <h2>Literature Review/Related Work</h2>
+    <p class="m">
+      <ul>
+        <li><a href="https://thesportsmarketingplaybook.wordpress.com/2016/08/31/moneyball-how-big-data-analytics-turned-the-oakland-as-into-the-best-team-in-baseball/">2002 Oakland A's Breakdown</a>
+        </li>
+        <li><a href="http://www.baseballdatascience.com/analyzing-the-mlbs-home-run-boom/">Analyze MLB Home Run Boom</a>
+        </li>
+      </ul>
+      For the most part, predicting the home run leader for each MLB season has been untouched. This provides a relatively new and unexplored field for machine learning
+      to present hidden trends and data that were previously unknown. Since the 2002 Oakland Athletics, statistics and sabermetrics have been a booming area of research in all of baseball.
+      Machine learning will likely begin to utilize these new tracked pieces of data to predict games of baseball at a more accurate rate. 
+      There have been studies recently showing the explosion of the number of home runs hit each season since 2016. 
+      Those who follow the sport can only guess at where this spike in home runs came from; whether the ball is 'juiced' in the hitter's favor or whether the hitters themselves are 'juicing'.  
+      Whatever the explanation may be, there comes a question as to who the eventual season leader in the home run category will be.
+    </p>
+  </div>
+    
+  <div id="modapp" class="tabcontent">
+  <h2>Modeling Approach</h2>
+    <p class="m">
+      The baseline model used to initially train from a set of data used a Multivariate Linear Regression model. The data that was analyzed included total games, at bats, hits, home runs,
+      base on balls, strikeouts, batting average, on base percentage, and slugging percentage for each player.  We gave the years’ 2010-2018 data to our training set. 
+      Then, we gave the years’ 2018-2019 data to be our test set. After that, we ran the prediction regression for the previous season of 2020 to find the general accuracy of the model predictions.
+      We expected a skew in the numbers recorded for the 2020 season as there were fewer total games played due to the COVID-19 virus and the season was shortened to a 60 game season compared to a normal 162 game season. 
+      This allowed us to predict home run numbers if 2020 had been a full season. We expanded on the baseline model by reaching further back in time to gather statistics
+      50 years in the past to gather training sets with a larger sample size. This granted an expected higher accuracy from our baseline model using Multivariate Linear Regression.
+      We also wanted to run separate regression models on our data to see which regression fit our data best. The Bayesian-Ridge model was used to measure the accuracy of our system as we wanted to test for
+      multicollinearity to account for our data being highly correlated. We also wanted to try a Lasso Regression model to examine if it would reduce variability and improve the accuracy of our home run predictions.
+    </p>
+  </div>
+  
+  <div id="projtra" class="tabcontent">
+  <h2>Project Trajectory, Results, and Interpretation</h2>
+    <p class="m">
+      We started with our Multivariate Linear Regression model. This gave us a few metrics to base the accuracy of this model on such as the R2 value. The R2 value is a statistical measure
+      of how close our data are to the modeled regression line. With a high R2 value of (INSERT R2 VALUE HERE FROM LINEAR REGRESSION MODEL), the linear regression seemed to be a decent first fit for our data.
+      We were skeptical that our data still needed to further assurance when using the Linear Regression model so we decided to factor in the Expected Variance Score which accounts for the tendency of
+      underestimation/overestimation, or explains bias. As our Expected Variance Score of (INSERT EXPECTED VARIANCE SCORE HERE FROM REGRESSION MODEL) is almost the exact same as our R2 value,
+      we can see our estimation is virtually unbiased. We decided to take this information further and test our Multivariate Linear Regression model with a higher sample size to see if our predictions
+      were more accurate having been trained with more data. The R2 value changed to (INSERT NEW R2 VALUE FROM HIGHER SAMPLE SIZE) with our Expected Variance Score being (INSERT NEW EXPECTED VARIANCE SCORE FROM HIGHER SAMPLE SIZE)
+      which is (EVALUATE HOW CLOSELY RELATED THE R2 AND EXPECTED VARIANCE SCORE ARE).
+    </p>
+    <p class="m">
+      When we tested our data with different regression approaches, we can tell the accuracy of the model began to decrease. . When we used the Bayesian-Ridge model, our model’s R2 value was lower at
+      (INSERT R2 VALUE HERE FROM BAYESIAN-RIDGE REGRESSION MODEL) and our Expected Variance Score of (INSERT EXPECTED VARIANCE SCORE HERE FROM BAYESIAN-RIDGE REGRESSION MODEL) differed from our R2 value
+      which indicates we have a slight bias when using this model. When we tested our data with the Lasso Regression model, our model’s R2 value was lower at (INSERT R2 VALUE HERE FROM LASSO REGRESSION MODEL)
+      and our Expected Variance Score of (INSERT EXPECTED VARIANCE SCORE HERE FROM LASSO REGRESSION MODEL) differed from our R2 value which indicates we have a slight bias when using this model.
+    </p>
+    <p class="m">
+      We believe that our model predicts with relative accuracy and gives a decent estimation for the number of home runs to be hit during the next season played. As the results show, we have negative
+      values due to our regression models. . As negative values cannot be possible in the game of baseball, we attribute our predictions to higher negatively weighted stats than positive weighted stats
+      among the players with negative predicted home runs.
+    </p>
+  </div>
+  
+  <div id="conclusion" class="tabcontent">  
+    <h2>Conclusion and Future Work</h2>
+    <div class= "test">
+    <p class="m">
+      We acknowledge that our results are rudimentary and our models can use a bit of polishing. However, our models seem to result in logical outputs for the task we set out for.
+      The past home run leaders are more often predicted in the higher ranks among estimated home run leaders. We can interpret negative results like we did in the previous section
+      such that negative values for players can be attributed to the fact that they have a much less likely chance to output large numbers of home runs. The highest player predicted values
+      are extremely reasonable and can be generally expected for the next season. Given more time, if we scaled our data to meet season averages or if we gave net 0 weights to negative stats
+      instead of negative weights and kept our positive weights similar, we would most likely come up with more accurate numbers as well as bar the negative predicted values.
+    </p>
+    </div>
+  </div>
+  
+  <div id="reference" class="tabcontent">  
+    <h2>References</h2>
+    <div class= "test">
+    <p class="m">
+      <ul>
+        <li>Ford, Edward. “Moneyball: How Big Data & Analytics Turned The Oakland A's Into The Best Team In Baseball.” MONEYBALL: HOW BIG DATA & ANALYTICS TURNED THE OAKLAND A'S INTO THE BEST TEAM IN BASEBALL,
+          The Sports Marketing Playbook, 31 Aug. 2016, thesportsmarketingplaybook.wordpress.com/2016/08/31/moneyball-how-big-data-analytics-turned-the-oakland-as-into-the-best-team-in-baseball/. 
+        </li>
+        <li>Melling, Micah. “Analyzing the MLB’s Home Run Boom.” Baseball Data Science, 22 Nov. 2019, www.baseballdatascience.com/analyzing-the-mlbs-home-run-boom/. 
+        </li>
+        <li>Ray, Sunil. “Regression Techniques in Machine Learning.” Analytics Vidhya, 18 Oct. 2020, www.analyticsvidhya.com/blog/2015/08/comprehensive-guide-regression/. 
+        </li>
+      </ul>
+    </p>
+    </div>
+    <h2>Support Materials</h2>
+    <div class= "test">
+    <p class="m">
+      <ul>
+        <li>“MLB Stats: Baseball Stats.” MLB.com, MLB Advanced Media, www.mlb.com/stats/.
+        </li>
+        <li>“Yearly League Leaders & Records for Home Runs.” Baseball Reference, www.baseball-reference.com/leaders/HR_leagues.shtml.
+        </li>
+        <li>https://www.palmetto.clemson.edu/jhub/hub/
+        </li>
+      </ul>
+    </p>
+    </div>
+    <h2>Declaration of Academic Integrity and Responsibility</h2>
+    <div class= "test">
+    <p class="m">
+      With my signature, I certify on my honor that:
+
+      The submitted work is my and my teammates' original work and not copied from the work of someone else.
+      Each use of existing work of others in the submitted is cited with proper reference.
+      Signature: ____________ Date: ______________
+    </p>
+    <p class="m">
+      With my signature, I certify on my honor that:
+
+      The submitted work is my and my teammates' original work and not copied from the work of someone else.
+      Each use of existing work of others in the submitted is cited with proper reference.
+      Signature: ____________ Date: ______________
+    </p>
+    </div>
+    <h2>Credit</h2>
+    <div class= "test">
+      <p class="m">
+      The project template is based on a template developed by Harvard IACS CS109 staff (see https://github.com/Harvard-IACS/2019-CS109A/tree/master/content/projects).
+      </p>
+    </div
+  </div>
+  </div><!--#kills the centering on the tabs stuff
+  
+#javascript below
+  <!--#tabs-->
+<script>
+function openCity(evt, cityName) {
+  // Declare all variables
+  var i, tabcontent, tablinks;
+
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+document.getElementById("defaultOpen").click();
+</script> 
+ 
 </body>
 </html>
