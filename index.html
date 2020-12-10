@@ -5,14 +5,11 @@
 <style>
  h1 {text-align:center;
      color:white;}
- h2 {text-align:center;}
+ h2 {text-align:left;}
  p.m {text-align:justify;
       text-align:left;
       display:block;}
   div.c {text-align:center;}
- div.WinRate {text-align:center;}
- div.PickRate {text-align:center;}
- div.TotalGames {text-align:center;}
   div.maintext {
     margin: auto;
     width: 75%;
@@ -181,14 +178,14 @@
   <div id="modapp" class="tabcontent">
   <h2>Modeling Approach</h2>
     <p class="m">
-      The baseline model used to initially train from a set of data used a Multivariate Linear Regression model. The data that was analyzed included total games, at bats, hits, home runs,
-      base on balls, strikeouts, batting average, on base percentage, and slugging percentage for each player.  We gave the years’ 2010-2018 data to our training set. 
+      The baseline model used to initially train from a set of data used a Multivariate Linear Regression model. The data that was analyzed included total games(G), at bats (AB), hits (H), home runs (HR),
+      base on balls (BB), strikeouts (SO), batting average (BA), on base percentage (OBP, and slugging percentage (SLG) for each player.  We gave the years’ 2010-2018 data to our training set. 
       Then, we gave the years’ 2018-2019 data to be our test set. After that, we ran the prediction regression for the previous season of 2020 to find the general accuracy of the model predictions.
       We expected a skew in the numbers recorded for the 2020 season as there were fewer total games played due to the COVID-19 virus and the season was shortened to a 60 game season compared to a normal 162 game season. 
-      This allowed us to predict home run numbers if 2020 had been a full season. We expanded on the baseline model by reaching further back in time to gather statistics
-      50 years in the past to gather training sets with a larger sample size. This granted an expected higher accuracy from our baseline model using Multivariate Linear Regression.
-      We also wanted to run separate regression models on our data to see which regression fit our data best. The Bayesian-Ridge model was used to measure the accuracy of our system as we wanted to test for
-      multicollinearity to account for our data being highly correlated. We also wanted to try a Lasso Regression model to examine if it would reduce variability and improve the accuracy of our home run predictions.
+      This allowed us to predict home run numbers if 2020 had been a full season. We expanded on the baseline model by analyzing other regressions. This granted an expected higher understanding compared to our baseline model only
+      using Multivariate Linear Regression. We wanted to run separate regression models on our data to see which regression fit our data best. The Bayesian-Ridge model was used to measure the accuracy of our system as we wanted to test for
+      multicollinearity to account for our data attributes being highly correlated. We also wanted to try a Lasso Regression model to examine if it would reduce variability and improve the accuracy of our home run predictions. 
+      To get a further analysis of regression testing on our data set, we added a Decision Tree Regression to attempt to let the model learn to make decisions based on the data we provided.
     </p>
   </div>
   
@@ -196,22 +193,19 @@
   <h2>Project Trajectory, Results, and Interpretation</h2>
     <p class="m">
       We started with our Multivariate Linear Regression model. This gave us a few metrics to base the accuracy of this model on such as the R2 value. The R2 value is a statistical measure
-      of how close our data are to the modeled regression line. With a high R2 value of (INSERT R2 VALUE HERE FROM LINEAR REGRESSION MODEL), the linear regression seemed to be a decent first fit for our data.
+      of how close our data are to the modeled regression line. With a high R2 value of 0.929429, the linear regression seemed to be a decent first fit for our data.
       We were skeptical that our data still needed to further assurance when using the Linear Regression model so we decided to factor in the Expected Variance Score which accounts for the tendency of
-      underestimation/overestimation, or explains bias. As our Expected Variance Score of (INSERT EXPECTED VARIANCE SCORE HERE FROM REGRESSION MODEL) is almost the exact same as our R2 value,
-      we can see our estimation is virtually unbiased. We decided to take this information further and test our Multivariate Linear Regression model with a higher sample size to see if our predictions
-      were more accurate having been trained with more data. The R2 value changed to (INSERT NEW R2 VALUE FROM HIGHER SAMPLE SIZE) with our Expected Variance Score being (INSERT NEW EXPECTED VARIANCE SCORE FROM HIGHER SAMPLE SIZE)
-      which is (EVALUATE HOW CLOSELY RELATED THE R2 AND EXPECTED VARIANCE SCORE ARE).
+      underestimation/overestimation, or explaining bias. As our Expected Variance Score of 0.929580 is almost identical to the Linear Regression model's R2 value,
+      we can see our estimation is virtually unbiased. 
     </p>
     <p class="m">
-      When we tested our data with different regression approaches, we can tell the accuracy of the model began to decrease. . When we used the Bayesian-Ridge model, our model’s R2 value was lower at
-      (INSERT R2 VALUE HERE FROM BAYESIAN-RIDGE REGRESSION MODEL) and our Expected Variance Score of (INSERT EXPECTED VARIANCE SCORE HERE FROM BAYESIAN-RIDGE REGRESSION MODEL) differed from our R2 value
-      which indicates we have a slight bias when using this model. When we tested our data with the Lasso Regression model, our model’s R2 value was lower at (INSERT R2 VALUE HERE FROM LASSO REGRESSION MODEL)
-      and our Expected Variance Score of (INSERT EXPECTED VARIANCE SCORE HERE FROM LASSO REGRESSION MODEL) differed from our R2 value which indicates we have a slight bias when using this model.
+      When we tested our data with different regression approaches, the Bayesian-Ridge model actually outperformed the Linear Regression model slightly. We tested the same model using a Lasso Regression decreased our model's
+      accuracy. The expected value of the Lasso Regression model varied slightly more from the R2 value which indicates a slight bias. The Decision Tree model provided the worst test accuracy which indicates that this regression
+      model doesn't fit our data best. Overall, the Bayesion-Ridge model's accuracy and bias seems to be the best fit with the Linear Regression model in a close second.
     </p>
     <p class="m">
       We believe that our model predicts with relative accuracy and gives a decent estimation for the number of home runs to be hit during the next season played. As the results show, we have negative
-      values due to our regression models. . As negative values cannot be possible in the game of baseball, we attribute our predictions to higher negatively weighted stats than positive weighted stats
+      values due to our regression models. As negative values cannot be possible in the game of baseball, we attribute our predictions to higher negatively weighted stats than positive weighted stats
       among the players with negative predicted home runs.
     </p>
   </div>
@@ -252,7 +246,7 @@
         </li>
         <li>“Yearly League Leaders & Records for Home Runs.” Baseball Reference, www.baseball-reference.com/leaders/HR_leagues.shtml.
         </li>
-        <li>https://www.palmetto.clemson.edu/jhub/hub/
+        <li>Group Reports and Notebook: <a href="http://www.baseballdatascience.com/analyzing-the-mlbs-home-run-boom/"></a>
         </li>
       </ul>
     </p>
