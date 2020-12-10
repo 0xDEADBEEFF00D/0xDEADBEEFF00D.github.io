@@ -191,7 +191,7 @@
   <h2>Modeling Approach</h2>
     <p class="m">
       The baseline model used to initially train from a set of data used a Multivariate Linear Regression model. The data that was analyzed included total games(G), at bats (AB), hits (H), home runs (HR),
-      base on balls (BB), strikeouts (SO), batting average (BA), on base percentage (OBP, and slugging percentage (SLG) for each player.  We gave the years’ 2010-2018 data to our training set. 
+      base on balls (BB), strikeouts (SO), batting average (BA), on base percentage (OBP), and slugging percentage (SLG) for each player.  We gave the years’ 2010-2018 data to our training set. 
       Then, we gave the years’ 2018-2019 data to be our test set. After that, we ran the prediction regression for the previous season of 2020 to find the general accuracy of the model predictions.
       We expected a skew in the numbers recorded for the 2020 season as there were fewer total games played due to the COVID-19 virus and the season was shortened to a 60 game season compared to a normal 162 game season. 
       This allowed us to predict home run numbers if 2020 had been a full season. We expanded on the baseline model by analyzing other regressions. This granted an expected higher understanding compared to our baseline model only
@@ -210,11 +210,13 @@
       underestimation/overestimation, or explaining bias. As our Expected Variance Score of 0.929580 is almost identical to the Linear Regression model's R2 value,
       we can see our estimation is virtually unbiased. 
     </p>
+    <img src="/imgs/DataTable.JPG" alt="Features" style="width:100px;height:100px;">
     <p class="m">
       When we tested our data with different regression approaches, the Bayesian-Ridge model actually outperformed the Linear Regression model slightly. We tested the same model using a Lasso Regression decreased our model's
       accuracy. The expected value of the Lasso Regression model varied slightly more from the R2 value which indicates a slight bias. The Decision Tree model provided the worst test accuracy which indicates that this regression
       model doesn't fit our data best. Overall, the Bayesion-Ridge model's accuracy and bias seems to be the best fit with the Linear Regression model in a close second.
     </p>
+    <img src="/imgs/DataGraph.JPG" alt="Features" style="width:300px;height:200px;">
     <p class="m">
       We believe that our model predicts with relative accuracy and gives a decent estimation for the number of home runs to be hit during the next season played. As the results show, we have negative
       values due to our regression models. As negative values cannot be possible in the game of baseball, we attribute our predictions to higher negatively weighted stats than positive weighted stats
